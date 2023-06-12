@@ -8,7 +8,7 @@ services:
     volumes:
       - ./app:/app
     environment:
-      - DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_DOMAIN}:${POSTGRES_PORT}/${postgres}
+      - DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:${POSTGRES_PORT}/${postgres}
       - SITE_DOMAIN=${SITE_DOMAIN}
       - SITE_PORT=${SITE_PORT}
       - DEBUG=${DEBUG}
